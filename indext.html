@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RED MUSE</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        rouge: '#B11226',
+                        burgundy: '#5A0A0A',
+                        darkred: '#2B0303',
+                        rose: '#E76F72',
+                        cream: '#FFF8EF',
+                        beige: '#F3E5D0',
+                        softbeige: '#D8BFA5'
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+
+        .hero-img {
+            position: absolute;
+
+            width: 650px;
+            height: 620px;
+
+            top: -10px;
+            left: -70px;
+
+            object-fit: contain;
+
+            opacity: 0;
+
+            transform: scale(0.90) translateY(20px);
+
+            border-radius: 35px;
+
+            filter: drop-shadow(0 25px 45px rgba(0, 0, 0, 0.35));
+
+            transition:
+                opacity 0.8s ease,
+                transform 1s cubic-bezier(.22, 1, .36, 1);
+
+            pointer-events: none;
+        }
+
+        .hero-img.active {
+            opacity: 1;
+            transform: scale(1) translateY(0);
+            z-index: 10;
+        }
+
+    </style>
+</head>
+<body>
+<header class="fixed top-0 left-0 w-full z-50 bg-[#4A0B12] text-cream">
+    <nav class="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+
+        <a href="#" class="text-3xl font-serif tracking-[0.2em]">
+            RED MUSE
+        </a>
+
+        <div class="hidden md:flex items-center gap-10 text-sm uppercase tracking-[0.2em]">
+
+            <a href="#shop"
+               class="hover:text-rose transition duration-300">
+                Shop
+            </a>
+
+            <a href="#shades"
+               class="hover:text-rose transition duration-300">
+                Shades
+            </a>
+
+            <a href="#about"
+               class="hover:text-rose transition duration-300">
+                About
+            </a>
+
+        </div>
+
+        <button class="border border-cream px-5 py-2 text-sm
+                       hover:bg-cream hover:text-darkred
+                       transition duration-300">
+
+            CART (0)
+
+        </button>
+
+    </nav>
+
+</header>
+<section class="min-h-screen bg-darkred text-cream pt-16 overflow-hidden">
+
+    <div class="max-w-7xl mx-auto px-6 min-h-[90vh]
+                grid md:grid-cols-2 items-center gap-10">
+        <div class="relative z-10 -translate-y-10">
+
+            <p class="uppercase tracking-[0.5em]
+                      text-rose text-sm mb-6">
+
+                Luxury Lip Gloss
+
+            </p>
+            <h1 class="text-7xl md:text-9xl
+                       font-serif leading-[0.8]">
+
+                RED
+
+                <span class="block text-rose">
+                    MUSE
+                </span>
+
+            </h1>
+            <p class="mt-10 max-w-md
+                      text-beige text-lg
+                      leading-relaxed">
+
+                Discover your perfect red.
+                A collection of glossy shades made
+                for every mood.
+
+            </p>
+            <a href="#shop"
+               class="inline-block mt-10
+                      bg-cream text-darkred
+                      px-10 py-4
+                      uppercase tracking-[0.2em]
+                      text-sm
+                      hover:bg-rose hover:text-white
+                      transition duration-500">
+
+                Shop The Collection
+
+            </a>
+
+        </div>
+        <div class="relative w-full h-[650px]
+                    flex items-center justify-center">
+
+            <div class="relative w-[500px] h-[600px]">
+
+                <img src="imag/1.jpg"
+                     class="hero-img active"
+                     alt="RED MUSE">
+
+                <img src="imag/5.jpg"
+                     class="hero-img"
+                     alt="RED MUSE">
+
+                <img src="imag/2.jpg"
+                     class="hero-img"
+                     alt="RED MUSE">
+
+                <img src="imag/3.jpg"
+                     class="hero-img"
+                     alt="RED MUSE">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="about"
+         class="bg-darkred text-cream
+                py-28 overflow-hidden">
+
+    <div class="w-full px-6">
+
+        <div class="flex items-center
+                    justify-center gap-8">
+            <div class="flex-shrink-0">
+
+                <img src="imag/18.jpg"
+                     alt="RED MUSE"
+
+                     class="w-[400px] h-[560px]
+                            object-cover
+                            shadow-2xl">
+
+            </div>
+            <div class="flex-shrink-0
+                        bg-beige text-darkred
+
+                        w-[500px]
+                        h-[560px]
+
+                        px-12
+
+                        text-center
+
+                        flex flex-col
+                        justify-center">
+
+
+                <p class="uppercase
+                          tracking-[0.5em]
+                          text-rouge
+                          text-xs mb-7">
+
+                    The Muse Behind The Red
+
+                </p>
+                <h2 class="text-6xl
+                           font-serif
+                           leading-[0.9]">
+
+                    Made for
+
+                    <span class="block text-rouge">
+
+                        your mood.
+
+                    </span>
+
+                </h2>
+                <p class="mt-8
+                          text-darkred/70
+                          text-lg
+                          leading-relaxed">
+
+                    RED MUSE is a celebration of color,
+                    confidence, and everyday beauty.
+                    Every shade is created to become
+                    a little part of your story.
+
+                </p>
+                <div class="mt-9 mx-auto
+                            w-20 h-px
+                            bg-rouge">
+
+                </div>
+
+            </div>
+            <div class="flex-shrink-0">
+
+                <img src="imag/29.jpg"
+                     alt="RED MUSE"
+
+                     class="w-[400px] h-[560px]
+                            object-cover
+                            shadow-2xl">
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const images = document.querySelectorAll(".hero-img");
+
+    let current = 0;
+
+    setInterval(function () {
+
+        images[current].classList.remove("active");
+
+        current++;
+
+        if (current >= images.length) {
+            current = 0;
+        }
+
+        images[current].classList.add("active");
+
+    }, 2000);
+
+});
+
+</script>
+<section id="shop" class="bg-beige text-darkred py-28 overflow-hidden">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+        <div class="text-center mb-16">
+
+            <p class="uppercase tracking-[0.5em] text-rouge text-xs mb-5">
+                The Collection
+            </p>
+
+            <h2 class="text-6xl md:text-7xl font-serif">
+                Lip Gloss
+            </h2>
+
+            <p class="mt-5 text-darkred/60">
+                Find the red that feels like you.
+            </p>
+
+        </div>
+        <div
+            id="productSlider"
+            class="w-full overflow-hidden"
+        >
+
+            <div
+                id="productTrack"
+                class="flex gap-8 w-max"
+            >
+                <div class="product-card group w-[280px] flex-shrink-0">
+                    <div class="overflow-hidden bg-cream">
+                        <img
+                            src="imag/7.jpg"
+                            alt="Rouge Muse"
+                            class="w-full h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
+                        >
+                    </div>
+
+                    <div class="pt-5">
+                        <h3 class="font-serif text-xl">
+                            Rouge Muse
+                        </h3>
+
+                        <p class="text-sm text-darkred/60 mt-1">
+                            Glossy Red
+                        </p>
+
+                        <p class="mt-3 text-rouge">
+                            $24
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card group w-[280px] flex-shrink-0">
+                    <div class="overflow-hidden bg-cream">
+                        <img
+                            src="imag/8.jpg"
+                            alt="Velvet Red"
+                            class="w-full h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
+                        >
+                    </div>
+
+                    <div class="pt-5">
+                        <h3 class="font-serif text-xl">
+                            Velvet Red
+                        </h3>
+
+                        <p class="text-sm text-darkred/60 mt-1">
+                            Deep Gloss
+                        </p>
+
+                        <p class="mt-3 text-rouge">
+                            $24
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card group w-[280px] flex-shrink-0">
+                    <div class="overflow-hidden bg-cream">
+                        <img
+                            src="imag/9.jpg"
+                            alt="Ruby Kiss"
+                            class="w-full h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
+                        >
+                    </div>
+
+                    <div class="pt-5">
+                        <h3 class="font-serif text-xl">
+                            Ruby Kiss
+                        </h3>
+
+                        <p class="text-sm text-darkred/60 mt-1">
+                            Classic Red
+                        </p>
+
+                        <p class="mt-3 text-rouge">
+                            $24
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card group w-[280px] flex-shrink-0">
+                    <div class="overflow-hidden bg-cream">
+                        <img
+                            src="imag/10.jpg"
+                            alt="Cherry Muse"
+                            class="w-full h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
+                        >
+                    </div>
+
+                    <div class="pt-5">
+                        <h3 class="font-serif text-xl">
+                            Cherry Muse
+                        </h3>
+
+                        <p class="text-sm text-darkred/60 mt-1">
+                            Cherry Red
+                        </p>
+
+                        <p class="mt-3 text-rouge">
+                            $24
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card group w-[280px] flex-shrink-0">
+                    <div class="overflow-hidden bg-cream">
+                        <img
+                            src="imag/11.jpg"
+                            alt="Crimson"
+                            class="w-full h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
+                        >
+                    </div>
+
+                    <div class="pt-5">
+                        <h3 class="font-serif text-xl">
+                            Crimson
+                        </h3>
+
+                        <p class="text-sm text-darkred/60 mt-1">
+                            Rich Red
+                        </p>
+
+                        <p class="mt-3 text-rouge">
+                            $24
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card group w-[280px] flex-shrink-0">
+                    <div class="overflow-hidden bg-cream">
+                        <img
+                            src="imag/12.jpg"
+                            alt="Rose Red"
+                            class="w-full h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
+                        >
+                    </div>
+
+                    <div class="pt-5">
+                        <h3 class="font-serif text-xl">
+                            Rose Red
+                        </h3>
+
+                        <p class="text-sm text-darkred/60 mt-1">
+                            Soft Red
+                        </p>
+
+                        <p class="mt-3 text-rouge">
+                            $24
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card group w-[280px] flex-shrink-0">
+                    <div class="overflow-hidden bg-cream">
+                        <img
+                            src="imag/13.jpg"
+                            alt="Scarlet"
+                            class="w-full h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
+                        >
+                    </div>
+
+                    <div class="pt-5">
+                        <h3 class="font-serif text-xl">
+                            Scarlet
+                        </h3>
+
+                        <p class="text-sm text-darkred/60 mt-1">
+                            Bold Red
+                        </p>
+
+                        <p class="mt-3 text-rouge">
+                            $24
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card group w-[280px] flex-shrink-0">
+                    <div class="overflow-hidden bg-cream">
+                        <img
+                            src="imag/14.jpg"
+                            alt="Wine Muse"
+                            class="w-full h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
+                        >
+                    </div>
+
+                    <div class="pt-5">
+                        <h3 class="font-serif text-xl">
+                            Wine Muse
+                        </h3>
+
+                        <p class="text-sm text-darkred/60 mt-1">
+                            Wine Red
+                        </p>
+
+                        <p class="mt-3 text-rouge">
+                            $24
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card group w-[280px] flex-shrink-0">
+                    <div class="overflow-hidden bg-cream">
+                        <img
+                            src="imag/15.jpg"
+                            alt="Burgundy"
+                            class="w-full h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
+                        >
+                    </div>
+
+                    <div class="pt-5">
+                        <h3 class="font-serif text-xl">
+                            Burgundy
+                        </h3>
+
+                        <p class="text-sm text-darkred/60 mt-1">
+                            Dark Gloss
+                        </p>
+
+                        <p class="mt-3 text-rouge">
+                            $24
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card group w-[280px] flex-shrink-0">
+                    <div class="overflow-hidden bg-cream">
+                        <img
+                            src="imag/16.jpg"
+                            alt="Rosewood"
+                            class="w-full h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
+                        >
+                    </div>
+
+                    <div class="pt-5">
+                        <h3 class="font-serif text-xl">
+                            Rosewood
+                        </h3>
+
+                        <p class="text-sm text-darkred/60 mt-1">
+                            Warm Red
+                        </p>
+
+                        <p class="mt-3 text-rouge">
+                            $24
+                        </p>
+                    </div>
+                </div>
+                <div class="product-card group w-[280px] flex-shrink-0">
+                    <div class="overflow-hidden bg-cream">
+                        <img
+                            src="imag/17.jpg"
+                            alt="Muse Noir"
+                            class="w-full h-[380px] object-cover transition-transform duration-700 group-hover:scale-105"
+                        >
+                    </div>
+
+                    <div class="pt-5">
+                        <h3 class="font-serif text-xl">
+                            Muse Noir
+                        </h3>
+
+                        <p class="text-sm text-darkred/60 mt-1">
+                            Deep Berry
+                        </p>
+
+                        <p class="mt-3 text-rouge">
+                            $24
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const slider = document.getElementById("productSlider");
+    const track = document.getElementById("productTrack");
+
+    const originalProducts = Array.from(
+        track.children
+    );
+
+    originalProducts.forEach(product => {
+
+        const clone = product.cloneNode(true);
+
+        track.appendChild(clone);
+
+    });
+
+
+    let position = 0;
+    let paused = false;
+
+    const speed = 0.35;
+
+    slider.addEventListener("mouseenter", function () {
+        paused = true;
+    });
+
+    slider.addEventListener("mouseleave", function () {
+        paused = false;
+    });
+
+
+    function animateProducts() {
+
+        if (!paused) {
+
+            position += speed;
+            const firstProduct = originalProducts[0];
+            const secondProduct = originalProducts[1];
+
+            const productWidth =
+                secondProduct.offsetLeft -
+                firstProduct.offsetLeft;
+
+            const firstSetWidth =
+                productWidth * originalProducts.length;
+            if (position >= firstSetWidth) {
+                position -= firstSetWidth;
+            }
+
+
+            track.style.transform =
+                `translate3d(-${position}px, 0, 0)`;
+
+        }
+
+        requestAnimationFrame(animateProducts);
+
+    }
+
+    animateProducts();
+
+});
+
+</script>
+
+<section id="shades" class="relative py-24 bg-[#4A0B12] overflow-hidden">
+
+  <div class="px-6 md:px-12 mb-12">
+
+    <p class="text-[#FFF8EF]/50 text-[10px] tracking-[0.5em] uppercase mb-4">
+      RED MUSE
+    </p>
+
+    <div class="flex items-end justify-between">
+
+      <h2 class="font-serif text-[#FFF8EF] text-5xl md:text-6xl leading-none">
+        FIND YOUR <span class="italic">RED</span>
+      </h2>
+
+      <span class="hidden md:block text-[#FFF8EF]/40 text-xs tracking-[0.3em] uppercase">
+        11 Shades
+      </span>
+
+    </div>
+
+  </div>
+
+
+  <div id="shadeSlider" class="overflow-hidden">
+
+    <div
+      id="shadeTrack"
+      class="flex gap-6 px-6"
+      style="width: max-content;"
+    >
+      <div class="shade-card">
+        <div class="shade-image">
+          <img src="imag/19.jpg" alt="Deep Ruby">
+        </div>
+
+        <div class="shade-name">
+          Deep Ruby
+        </div>
+      </div>
+
+
+      <div class="shade-card">
+        <div class="shade-image">
+          <img src="imag/20.jpg" alt="Burnt Cherry">
+        </div>
+
+        <div class="shade-name">
+          Burnt Cherry
+        </div>
+      </div>
+
+
+      <div class="shade-card">
+        <div class="shade-image">
+          <img src="imag/21.jpg" alt="Velvet Wine">
+        </div>
+
+        <div class="shade-name">
+          Velvet Wine
+        </div>
+      </div>
+
+
+      <div class="shade-card">
+        <div class="shade-image">
+          <img src="imag/22.jpg" alt="Crimson">
+        </div>
+
+        <div class="shade-name">
+          Crimson
+        </div>
+      </div>
+      <div class="shade-card">
+        <div class="shade-image">
+          <img src="imag/23.jpg" alt="Bordeaux">
+        </div>
+
+        <div class="shade-name">
+          Bordeaux
+        </div>
+      </div>
+      <div class="shade-card">
+        <div class="shade-image">
+          <img src="imag/24.jpg" alt="Dark Merlot">
+        </div>
+
+        <div class="shade-name">
+          Dark Merlot
+        </div>
+      </div>
+      <div class="shade-card">
+        <div class="shade-image">
+          <img src="imag/25.jpg" alt="Classic Red">
+        </div>
+
+        <div class="shade-name">
+          Classic Red
+        </div>
+      </div>
+      <div class="shade-card">
+        <div class="shade-image">
+          <img src="imag/26.jpg" alt="Scarlet">
+        </div>
+
+        <div class="shade-name">
+          Scarlet
+        </div>
+      </div>
+      <div class="shade-card">
+        <div class="shade-image">
+          <img src="imag/27.jpg" alt="True Red">
+        </div>
+
+        <div class="shade-name">
+          True Red
+        </div>
+      </div>
+      <div class="shade-card">
+        <div class="shade-image">
+          <img src="imag/28.jpg" alt="Black Cherry">
+        </div>
+
+        <div class="shade-name">
+          Black Cherry
+        </div>
+      </div>
+      <div class="shade-card">
+        <div class="shade-image">
+          <img src="imag/11.jpg" alt="Deep Burgundy">
+        </div>
+
+        <div class="shade-name">
+          Deep Burgundy
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<style>
+.shade-card {
+  width: 280px;
+  flex-shrink: 0;
+}
+
+
+
+.shade-image {
+  width: 280px;
+  height: 380px;
+  overflow: hidden;
+}
+
+.shade-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+
+  transition: transform 0.6s ease;
+}
+
+
+
+.shade-card:hover .shade-image img {
+  transform: scale(1.03);
+}
+
+.shade-name {
+  padding-top: 15px;
+
+  color: #FFF8EF;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 18px;
+  line-height: 1.2;
+
+  letter-spacing: 0.02em;
+}
+
+@media (max-width: 768px) {
+
+  .shade-card {
+    width: 230px;
+  }
+
+  .shade-image {
+    width: 230px;
+    height: 320px;
+  }
+
+  .shade-name {
+    font-size: 16px;
+  }
+
+}
+
+</style>
+
+
+<script>
+
+const shadeSlider = document.getElementById("shadeSlider");
+const shadeTrack = document.getElementById("shadeTrack");
+
+const originalShadeCount = shadeTrack.children.length;
+
+
+
+for (let i = 0; i < originalShadeCount; i++) {
+  shadeTrack.appendChild(
+    shadeTrack.children[i].cloneNode(true)
+  );
+}
+
+
+let shadePosition = 0;
+let shadeSpeed = 0.35;
+let shadePaused = false;
+
+
+function getShadeSetWidth() {
+
+  const first = shadeTrack.children[0];
+  const duplicate = shadeTrack.children[originalShadeCount];
+
+  return duplicate.offsetLeft - first.offsetLeft;
+}
+
+
+function animateShades() {
+
+  if (!shadePaused) {
+
+    shadePosition += shadeSpeed;
+
+    const setWidth = getShadeSetWidth();
+
+    if (shadePosition >= setWidth) {
+      shadePosition -= setWidth;
+    }
+
+    shadeTrack.style.transform =
+      `translate3d(-${shadePosition}px, 0, 0)`;
+  }
+
+  requestAnimationFrame(animateShades);
+}
+
+
+
+
+shadeSlider.addEventListener("mouseenter", () => {
+  shadePaused = true;
+});
+
+
+shadeSlider.addEventListener("mouseleave", () => {
+  shadePaused = false;
+});
+
+
+
+animateShades();
+
+</script>
+<footer id="contact" class="bg-[#F3E5D0] text-[#4A0B12]">
+
+  <div class="max-w-7xl mx-auto px-6 md:px-12 py-20">
+
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 pb-16">
+
+      <div class="md:col-span-2">
+
+        <h2 class="font-serif text-5xl md:text-6xl leading-none">
+          RED <span class="italic">MUSE</span>
+        </h2>
+
+        <p class="mt-6 max-w-sm text-sm leading-7 text-[#4A0B12]/60">
+          Discover your perfect red.
+          A collection created for every mood,
+          every moment, and every muse.
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <p class="text-[10px] uppercase tracking-[0.4em] mb-6 text-[#4A0B12]/50">
+          Follow
+        </p>
+
+        <div class="flex flex-col gap-4 text-sm">
+
+          <a href="#" class="hover:opacity-50 transition">
+            Instagram
+          </a>
+
+          <a href="#" class="hover:opacity-50 transition">
+            Facebook
+          </a>
+
+          <a href="#" class="hover:opacity-50 transition">
+            Telegram
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <div>
+
+        <p class="text-[10px] uppercase tracking-[0.4em] mb-6 text-[#4A0B12]/50">
+          Contact
+        </p>
+
+        <div class="flex flex-col gap-4 text-sm">
+
+          <a
+            href="tel:056783345"
+            class="hover:opacity-50 transition"
+          >
+            056 783 345
+          </a>
+
+          <a
+            href="#"
+            class="hover:opacity-50 transition"
+          >
+            Official Website
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <div
+      class="border-t border-[#4A0B12]/20
+             pt-6
+             flex flex-col md:flex-row
+             justify-between
+             items-start md:items-center
+             gap-4"
+    >
+
+      <p class="text-[10px] uppercase tracking-[0.25em] text-[#4A0B12]/50">
+        © 2026 RED MUSE
+      </p>
+
+      <p class="text-[10px] uppercase tracking-[0.25em] text-[#4A0B12]/50">
+        All Rights Reserved
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
